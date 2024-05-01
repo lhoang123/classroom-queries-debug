@@ -35,10 +35,8 @@ Rails.application.routes.draw do
   get("/students", { :controller => "students", :action => "index" })
   
   get("/students/:path_id", { :controller => "students", :action => "show" })
-
+  
   post("/insert_student", { :controller => "students", :action => "create" })
-
-  get("/students", { :controller => "students", :action => "index" })
   
   post("/modify_student/:path_id", { :controller => "students", :action => "update" })
 
